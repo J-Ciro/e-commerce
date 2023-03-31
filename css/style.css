@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Average&family=Raleway:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.header__buy {
+  background-color: rgb(14, 164, 135);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px 90px 5px 90px;
+}
+
+.header__buy a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  border-bottom: 1px solid white;
+}
+
+.buy__currency {
+  display: flex;
+  gap: 5px;
+}
+.flags {
+  display: flex;
+  gap: 5px;
+}
+
+.flags img {
+  width: 25px;
+  height: 25px;
+}
+
+#currency {
+  width: 55px;
+  height: 30px;
+  background-color: rgba(249, 249, 249, 0);
+  border: 0px;
+  color: white;
+}
+#idioms {
+  width: 70px;
+  height: 30px;
+  background-color: rgba(249, 249, 249, 0);
+  border: 0px;
+  color: white;
+}
+
+.header__two {
+  padding-top: 20px;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  padding-left: 90px;
+  padding-right: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar__icons {
+  display: flex;
+}
+
+.search__bar {
+  display: flex;
+}
+
+.search__bar button {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: 1px solid rgb(237, 237, 237);
+  width: 45px;
+  height: 45px;
+}
+
+.search__bar #location__ico {
+  background-color: rgb(244, 244, 252);
+  border-radius: 3px;
+  padding: 2px;
+  color: grey;
+  cursor: pointer;
+}
+.search__bar #search {
+  width: 550px;
+  height: 45px;
+  border: 1px solid rgb(225, 225, 225);
+}
+
+.search__bar #search__button {
+  background-color: rgb(250, 160, 65);
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  width: 60px;
+  height: 45px;
+  cursor: pointer;
+}
+
+.bar__icons #phone,
+.bar__icons #favorite,
+.bar__icons #cart {
+  color: rgb(93, 93, 93);
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  padding: 0px 10px 0px 10px;
+  border-right: 1px solid rgb(187, 187, 187);
+  cursor: pointer;
+}
+
+.bar__icons #account {
+  color: rgb(93, 93, 93);
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px;
+  padding: 0px 10px 0px 10px;
+}
+.kart {
+  font-weight: 700;
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+
+.fast,
+.dot {
+  color: rgb(14, 164, 135);
+  font-weight: 700;
+  font-size: 45px;
+  letter-spacing: 0px;
+}
+
+.two__logo {
+  display: flex;
+}
+
+.header__nav {
+  padding-top: 20px;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  padding-left: 90px;
+  padding-right: 90px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav ul {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+.header__nav nav {
+  display: flex;
+  width: 100vh;
+  gap: 50px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.header__nav li {
+  display: flex;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.header__nav #all__category {
+  display: flex;
+  background-color: rgb(14, 164, 135);
+  border: 0px;
+  width: 280px;
+  height: 50px;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 5px;
+  flex-shrink: 0px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button__search {
+  margin-right: 20px;
+}
+.header__nav button.light {
+  display: flex;
+  background-color: rgba(19, 209, 171, 0.315);
+  border: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(14, 164, 135);
+  cursor: pointer;
+}
+
+.main__big {
+  grid-area: big;
+}
+.main__small__1 {
+  grid-area: smal1;
+}
+
+.main__small__2 {
+  grid-area: smal2;
+}
+.main__small__3 {
+  grid-area: smal3;
+}
+
+.main__small__4 {
+  grid-area: smal4;
+}
+
+.main__small__5 {
+  grid-area: smal5;
+}
+.section__off {
+  display: grid;
+  grid-template:
+    "big   big   smal1"
+    "big   big   smal2"
+    "smal3 smal4 smal5";
+}
+
+
+.main__big{
+  display: flex;
+  width: 812.750px;
+  height: 536.650px;
+}
+.imagen__big {
+  width: 350px;
+  float: right;
+}
+.imagen__big img{
+  width: auto;
+  height: 200px;
+
+}
+
+.big__text{
+  display: flex;
+  width: 200px;
+}
+.main__small__1 {
+  width: 380px;
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: red;
+}
+
+.main__small__1 img {
+  width: 380px;
+  height: 250px;
+  border-radius: 15px;
+  
+}

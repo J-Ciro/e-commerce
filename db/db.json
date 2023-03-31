@@ -1,0 +1,15 @@
+{
+  "productos": [
+    {
+      "id": 0,
+      "category": "Snacks",
+      "name": "Yumitos Chilli Sprinkled Potato Chips 100g",
+      "weight": "100g",
+      "price": "$10.25",
+      "discount": "$12.36"
+    }
+  ],
+  "usuarios": [],
+  "favoritos": [],
+  "carrito": []
+}
