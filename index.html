@@ -9,131 +9,135 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <title>Fastkart.</title>
   </head>
   <body>
     <header class="header">
       <section class="header__main">
-        <section class="header__buy">
-          <span class="buy__text"
+        <section class="bg-green">
+          <section class="bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
+            <span class="buy__text"
             >Somethng you love is now on sale!
-            <a href="" class="buy">Buy Now!</a>
+            <a href="" class="text-decoration-none text-white fw-bold border-bottom">Buy Now!</a>
           </span>
-          <section class="buy__currency">
-            <figure class="flags">
-              <img src="./imgs/en.png" alt="flags" />
-              <select name="idioms" id="idioms">
-                <option value="en">English</option>
-                <option value="es">Spanish</option>
+          <li class="d-flex  pointer-event">
+            <section class="d-flex gap-2 align-content-center align-items-center flex-nowrap flex-row flex-nowrap container-fluid">
+              <figure class="d-flex gap-2 align-content-center  align-items-center p-0 m-0" >
+                <img src="./imgs/en.png" alt="flags" width="25px" height="25px"/>
+                <select name="idioms" id="idioms" class= "w-20 h-2 border-0 bg-green text-white">
+                  <option value="en">English</option>
+                  <option value="es">Spanish</option>
               </select>
             </figure>
             
-            <select name="currency" id="currency">
+            <select name="currency" id="currency" class=" d-flex border-0 bg-green text-white  ">
               <option value="USD">USD</option>
               <option value="COP">COP</option>
             </select>
           </section>
         </section>
-        <section class="header__two">
-          <section class="two__logo">
-           <figure>
-            <img src="./imgs/logo.png" alt="" srcset="">
+      </section>
+    
+        <section class="pt-5 d-flex justify-content-between align-items-center container">
+          <section class="pt-2 d-flex align-items-center">
+           <figure class="">
+            <img src="./imgs/logo.png" alt="" srcset="" class="" class="d-flex" style="width: 150.65px;height:26.863px;">
            </figure>
           </section>
-          <section class="search__bar">
-            <button type="button" class="button__search">
-              <span class="material-symbols-outlined" id="location__ico">
-                location_on
-              </span>
-            </button>
-            <input type="text" name="search" id="search" />
-            <button type="button" id="search__button">
-              <span class="material-symbols-outlined" id="search__ico">
-                search
-              </span>
-            </button>
+          <section class="d-flex ">
+            <div class="d-flex ">
+              <button type="button" class="rounded-1  w-5 h-30  border-0" >
+                <span class="material-symbols-outlined p-2 bg-grey  w-100" id="location__ico">
+                  location_on
+                </span>
+              </button>
+              <form class="d-flex " role="search">
+                <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search" style="width: 450px;">
+                <button class="btn " type="submit"><span class="material-symbols-outlined" id="search__ico">
+                  search
+                </span></button>
+              </form>
+            </div>
           </section>
-          <section class="bar__icons">
-            <button type="button" id="phone">
+          <section class="d-flex ">
+            <button type="button" id="phone" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
               <span class="material-symbols-outlined"> phone_in_talk </span>
             </button>
-            <button type="button" id="favorite">
+            <button type="button" id="favorite" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
               <span class="material-symbols-outlined"> favorite </span>
             </button>
-            <button type="button" id="cart">
+            <button type="button" id="cart" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
               <span class="material-symbols-outlined"> shopping_cart </span>
             </button>
-            <button type="button" id="account">
+            <button type="button" id="account" class="text-dark border-0 pointer-event bg-white ps-2 pe-3">
               <span class="material-symbols-outlined"> person </span>
             </button>
           </section>
         </section>
-        <section class="header__nav">
-          <button type="button" id="all__category">
+        <section class="pt-4 justify-content-between align-items-center container d-flex">
+          <button type="button" id="all__category" class="d-flex border-0 align-items-center justify-content-center flex-shrink-0 pointer-event rounded-1 bg-green text-white" style="padding: 26.950px 13.650px; width: 207.550px; height:51.300px ;">
             <span class="material-symbols-outlined" id="span__all"> list </span
             >All Categories
           </button>
-          <nav>
-            <ul>
-              <li>
+          <nav class="d-flex gap-5 ps-5">
+            <ul class="d-flex gap-5 list-unstyled">
+              <li class="d-flex  pointer-event">
                 Home
                 <span class="material-symbols-outlined"> expand_more </span>
               </li>
-              <li>
+              <li class="d-flex  pointer-event">
                 Shop
                 <span class="material-symbols-outlined"> expand_more </span>
               </li>
-              <li>
+              <li class="d-flex  pointer-event">
                 Products
                 <span class="material-symbols-outlined"> expand_more </span>
               </li>
-              <li>
+              <li class="d-flex  pointer-event">
                 Mega Menu
                 <span class="material-symbols-outlined"> expand_more </span>
               </li>
-              <li>
+              <li class="d-flex  pointer-event">
+        
                 Blog
                 <span class="material-symbols-outlined"> expand_more </span>
               </li>
-              <li>
+              <li class="d-flex  pointer-event">
+                
                 Pages
                 <span class="material-symbols-outlined"> expand_more </span>
               </li>
-              <li>
+              <li class="d-flex  pointer-event">
+                
                 Contact
                 <span class="material-symbols-outlined"> expand_more </span>
               </li>
             </ul>
           </nav>
-          <button class="light">
+          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event">
             <span class="material-symbols-outlined"> bolt </span>
           </button>
         </section>
       </section>
     </header>
-    <main class="main">
-      <section class="main__section">
-        <section class="section__off">
-          <section class="main__big">
+    <main class="main container">
+      <section class="main__section container grid pt-4  custom-container">
+        <section class="grid row">
+          <section class="main__big col-md-5">
             <div class="imagen__big">
-              <!-- <figure >
+              <!-- <figure>
                 <img src="./imgs/big-off.png" alt="" srcset="" />
               </figure> -->
             </div>
             <div class="big__text">
               <span class="offer__tittle">Exclusive offer <span class="span__off0">30% Off</span></span>
-              <span class="h1__text"
-              >STAY HOME & DELIVERED YOUR
-              <span class="high__light">DAILY NEEDS</span></span
-              >
-              <span class="big__small__font"
-              >Vegetables contain many vitamins and minerals that are good for
-              your health</span
-              >
+              <span class="h1__text">STAY HOME & DELIVERED YOUR<span class="high__light">DAILY NEEDS</span></span>
+              <span class="big__small__font">Vegetables contain many vitamins and minerals that are good for your health</span>
               <button type="button" class="shop__now">Shop Now!</button>
             </div>
           </section>
-          <section class="main__small__1">
+          <section class="main__small__1 small1">
             <div class="small__text">
               <span class="small__off">45%<span class="test">OFF</span></span>
               <span class="small__header1">Nut Collection</span>
@@ -141,26 +145,25 @@
               <button type="button">Shop now</button>
             </div>
           </section>
-          
-          <section class="main__small__2">
+          <section class="main__small__2 small2">
             <div class="small__text2">
-            <span class="small__header1">Healthy Food</span>
+              <span class="small__header1">Healthy Food</span>
               <span class="small__header2">Organic Market</span>
               <span class="small__p">Start your daily shopping with som...</span>
               <button type="button">Shop now</button>
             </div>
           </section>
-          </section>
-          <section class="small__section">
-            <section class="main__small__3">
-              <div class="small__text3">
-                <section class="small__main__text">
-                  <span class="small__off__text">5% OFF</span>
-                  <span class="small__header">Hot Deals on New Items</span>
-                  <span class="small__p">Daily Essentials Eggs & Dairy</span>
-                </section>
-                <button type="button">Shop now</button>
-              </div>
+        </section>
+        <section class="small__section">
+          <section class="main__small__3">
+            <div class="small__text3">
+              <section class="small__main__text">
+                <span class="small__off__text">5% OFF</span>
+                <span class="small__header">Hot Deals on New Items</span>
+                <span class="small__p">Daily Essentials Eggs & Dairy</span>
+              </section>
+              <button type="button">Shop now</button>
+            </div>
           </section>
           <section class="main__small__4">
             <figure>
@@ -184,7 +187,8 @@
             </section>
             <button type="button">Shop now</button>
           </section>
-          </section>
+        </section>
+        
         </section>
         <section class="main__products">
           <aside class="category">
@@ -303,5 +307,6 @@
         <span>P</span>
       </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Average&family=Raleway:wght@100;300;400;500;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;700;800&display=swap');
 
+:root{
+  --a-background-color: rgb(14, 164, 135);
+  --bs-background-color: grey;
+  
+
+}
+.bg-green{
+  background-color: var( --a-background-color);
+}
+
+.bg-grey{
+  color: var(--bs-background-color);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +23,7 @@
 
 }
 
-.header__buy {
+/* .header__buy {
   background-color: rgb(14, 164, 135);
   color: white;
   font-family: 'Public Sans', sans-serif;
@@ -21,9 +35,9 @@
   justify-content: space-between;
   padding: 5px 100px 5px 100px;
   align-items: center;
-}
+} */
 
-.header__buy a {
+/* .header__buy a {
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -143,9 +157,9 @@
   display: flex;
   width: 150.65px;
   height: 26.863px;
-}
+} */
 
-.header__nav {
+/* .header__nav {
   padding-top: 20px;
   display: flex;
   font-family: 'Public Sans', sans-serif;
@@ -206,28 +220,25 @@
   border-radius: 5px;
   color: rgb(14, 164, 135);
   cursor: pointer;
+} */
+
+.customcontainer {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "big big small1"
+    "big big small2"
+    ". . .";
 }
 
-.main__big {
-  grid-area: big;
-}
-.main__small__1 {
-  grid-area: smal1;
-}
+.small2 { grid-area: small2; }
 
-.main__small__2 {
-  grid-area: smal2;
-}
-.section__off {
-  display: grid;
-  grid-template:
-    "big   big   smal1"
-    "big   big   smal2";
-    padding: 0px 100px 0px 100px;
-    gap: 23px 30px;
-    padding-top: 30px;
- 
-}
+.big { grid-area: big; }
+
+.small1 { grid-area: small1; }
+
 
 .buy__text{
   color: white;
