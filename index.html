@@ -39,7 +39,7 @@
         </section>
       </section>
     
-        <section class="pt-5 d-flex justify-content-between align-items-center container">
+        <section class="pt-5 d-flex justify-content-between align-items-center container sticky-top">
           <section class="pt-2 d-flex align-items-center">
            <figure class="">
             <img src="./imgs/logo.png" alt="" srcset="" class="" class="d-flex" style="width: 150.65px;height:26.863px;">
@@ -54,7 +54,7 @@
               </button>
               <form class="d-flex " role="search">
                 <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search" style="width: 450px;">
-                <button class="btn " type="submit"><span class="material-symbols-outlined" id="search__ico">
+                <button class="btn bg-green " type="submit"><span class="material-symbols-outlined " id="search__ico">
                   search
                 </span></button>
               </form>
@@ -122,9 +122,9 @@
       </section>
     </header>
     <main class="main container">
-      <section class="main__section container grid pt-4  custom-container">
-        <section class="grid row">
-          <section class="main__big col-md-5">
+      <section class="main__section container  pt-4  custom-container">
+        <section class="grid row gap-4">
+          <section class="main__big col-md-8">
             <div class="imagen__big">
               <!-- <figure>
                 <img src="./imgs/big-off.png" alt="" srcset="" />
@@ -134,107 +134,170 @@
               <span class="offer__tittle">Exclusive offer <span class="span__off0">30% Off</span></span>
               <span class="h1__text">STAY HOME & DELIVERED YOUR<span class="high__light">DAILY NEEDS</span></span>
               <span class="big__small__font">Vegetables contain many vitamins and minerals that are good for your health</span>
-              <button type="button" class="shop__now">Shop Now!</button>
+              <button type="button" class="shop__now">Shop Now!  <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
             </div>
           </section>
-          <section class="main__small__1 small1">
+          <div class="grid row col-4 gap-4">
+          <section class="main__small__1 small1 g-col-md-12" >
             <div class="small__text">
               <span class="small__off">45%<span class="test">OFF</span></span>
               <span class="small__header1">Nut Collection</span>
               <span class="small__p">We deliver organic vetetables & fruits</span>
-              <button type="button">Shop now</button>
+              <button type="button">Shop now  <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
             </div>
           </section>
-          <section class="main__small__2 small2">
+
+           
+           <section class="main__small__2 small1 col-md-12">
+             <div class="small__text">
+               <span class="small__header1">Healthy Food</span>
+               <span class="small__header2">Organic Market</span>
+               <span class="small__p">Start your daily shopping with som...</span>
+               <button type="button" class="">Shop now  <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+              </div>
+            </section>
+            
+          </section>
+          <section class="grid row align-items-center gap-3 pt-4 col-md-12 flex-nowrap align-content-between">
+            <section class="main__small__3 col-md-4 ps-0">
+              <div class="small__text2">
+                <section class="small__main__text ps-3">
+                 <span class="small__off__text ">5% OFF</span>
+                 <span class="small__header fw-bold">Hot Deals on New Items</span>
+                 <span class="small__p2">Daily Essentials Eggs & Dairy</span>
+                </section>
+              <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+               </div>
+            </section>
+          </div>
+          <section class="main__small__4 col-md-4 ps-0">
             <div class="small__text2">
-              <span class="small__header1">Healthy Food</span>
-              <span class="small__header2">Organic Market</span>
-              <span class="small__p">Start your daily shopping with som...</span>
-              <button type="button">Shop now</button>
+            <section class="small__main__text  ps-3">
+              <span class="small__off__text">5% OFF</span>
+              <span class="small__header fw-bold">Buy More & Save More</span>
+              <span class="small__p2">Fresh Vegetables</span>
+            </section>
+            <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+          </div>
+          </section>
+          <section class="main__small__5 col-md-4 ps-0">
+            <div class="small__text2">
+            <section class="small__main__text ps-3">
+              <span class="small__off__text ">5% OFF</span>
+              <span class="small__header fw-bold">Organic Meat Preapared</span>
+              <span class="small__p2">Delivered to Your Home</span>
+            </section>
+            <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
             </div>
           </section>
         </section>
-        <section class="small__section">
-          <section class="main__small__3">
-            <div class="small__text3">
-              <section class="small__main__text">
-                <span class="small__off__text">5% OFF</span>
-                <span class="small__header">Hot Deals on New Items</span>
-                <span class="small__p">Daily Essentials Eggs & Dairy</span>
-              </section>
-              <button type="button">Shop now</button>
+      </section>
+        </section>
+        <section class="row">
+          <aside class="col-3 lista">
+            
+              <div class=" category d-flex flex-column align-items-baseline gap-4  mt-4 pt-4 pe-4 pb-4 ps-2 rounded ">
+                <div class="position-relative box ps-2">
+                <h1 class=" fs-5 ">Category</h1>
+              </div>
+            
+              <ul class="list-unstyled">
+                <li>
+                  <img src="./imgs//vegetable.svg" alt="" srcset="">
+                  <button type="button">Vegetables & Fruit </button>
+                </li>
+                <li>
+                  <img src="./imgs/cup.svg" alt="" srcset="">
+                  <button type="button">Beverages</button>
+                </li>
+                <li>
+                  <img src="./imgs/meats.svg" alt="" srcset="">
+                  <button type="button">Meats & Seafood</button>
+
+                </li>
+                <li>
+                  <img src="./imgs/breakfast.svg" alt="" srcset="">
+                  <button type="button">Breakfast & Dairy</button>
+                </li>
+                <li>
+                  <img src="./imgs/frozen.svg" alt="" srcset="">
+                  <button type="button">Frozen Foods</button>
+                </li>
+                <li>
+                  <img src="./imgs/biscuit.svg" alt="" srcset="">
+                  <button type="button">Biscuits & Snacks</button>
+
+                </li>
+                <li>
+                  <img src="./imgs/grocery.svg" alt="" srcset="">
+                  <button type="button">Grocery & Staples</button>
+
+                </li>
+                <li>
+                  <img src="./imgs/drink.svg" alt="" srcset="">
+                  <button type="button">Wines & Alcochol Drinks</button>
+
+                </li>
+               </ul>
             </div>
-          </section>
-          <section class="main__small__4">
-            <figure>
-              <img src="" alt="" srcset="" />
-            </figure>
-            <section class="small__main__text">
-              <span class="small__off__text">5% OFF</span>
-              <span class="small__header">Buy More & Save More</span>
-              <span class="small__p">Fresh Vegetables</span>
-            </section>
-            <button type="button">Shop now</button>
-          </section>
-          <section class="main__small__5">
-            <figure>
-              <img src="" alt="" srcset="" />
-            </figure>
-            <section class="small__main__text">
-              <span class="small__off__text">5% OFF</span>
-              <span class="small__header">Organic Meat Preapared</span>
-              <span class="small__p">Delivered to Your Home</span>
-            </section>
-            <button type="button">Shop now</button>
-          </section>
-        </section>
-        
-        </section>
-        <section class="main__products">
-          <aside class="category">
-            <h1 class="category">Category</h1>
-            <button type="button">Vegetables & Fruit</button>
-            <button type="button">Beverages</button>
-            <button type="button">Meats & Seafood</button>
-            <button type="button">Breakfast & Dairy</button>
-            <button type="button">Frozen Foods</button>
-            <button type="button">Biscuits & Snacks</button>
-            <button type="button">Grocery & Staples</button>
-            <button type="button">Wines & Alcochol Drinks</button>
+          
           </aside>
+          <section class="col-9">
           <section class="top__save">
-            <h1 class="top">Top Save Today</h1>
-            <figure>
-              <img src="" alt="" srcset="" />
-            </figure>
-            <span
+            <h1 class="top pt-4">Top Save Today</h1>
+            <div class="pb-4">
+              <figure class="title-leaf m-0">
+                <span class="material-symbols-outlined">
+                  psychiatry
+                </span>
+              </figure>
+              <span
               >Don't mis this opportunity at a special discount just for this
               week.</span
-            >
-            <button type="button">Expires in 349:03:45:37</button>
+              >
+              <button type="button" class="expire-time ms-4" id="demo"></button>
+            </div>
           </section>
-          <section class="products__cards">
-            <div class="card">
-              <button type="button">Heart</button>
+          <section class="products__cards container bg-black">
+            <div class="card row">
+              <div class="options d-flex gap-3  bg-danger position-absolute top-50 align-content-center justify-content-center">
+                <button type="button"><span class="material-symbols-outlined heart">
+                  favorite
+                </span></button>
+                <button type="button">
+                  <span class="material-symbols-outlined">
+                    autorenew
+                    </span>
+                </button>
+                <button>
+                  <span class="material-symbols-outlined">
+                    visibility
+                    </span>
+                </button>
+              </div>
               <figure>
-                <img src="" alt="" srcset="" />
+                <img src="./imgs/fantasy-cookie.webp" alt="" srcset="" />
               </figure>
               <span class="card__h">Fantasy Crunchy Choco Chip Cookies</span>
               <span class="card__price"
                 >$26.69 <span class="card__discount">28.56</span></span
               >
               <figure class="card__starts">
-                <img src="" alt="" />
+                <!-- <img src="" alt="" /> -->
                 <span class="card__stock">In stock</span>
               </figure>
               <div class="card__add">
-                <span>Add</span>
-                <button type="button">+</button>
+                <span class="add__atom">Add
+                <button type="button"><span class="material-symbols-outlined">
+                  add
+                  </span></button>
+              </span>
               </div>
             </div>
           </section>
         </section>
-
+        </section>
+        
     </main>
     <footer class="footer">
       <div class="footer__col1">
@@ -307,6 +370,45 @@
         <span>P</span>
       </section>
     </footer>
+
+    
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+  
+  // Update the count down every 1 second
+  var x = setInterval(function() {
+  
+    // Get today's date and time
+    var now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      
+    // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML =`  <span class="material-symbols-outlined timer d-flex align-conten-evenly gap-2 align-tems-center">
+schedule
+
+<span class="timer pt-1">Expires in: ${days} d ${hours} h ${minutes} m  ${seconds} s 
+  </span>
+</span>
+
+`;      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+  </script>
+  
+    <script src="https://kit.fontawesome.com/a538994658.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   </body>
 </html>
