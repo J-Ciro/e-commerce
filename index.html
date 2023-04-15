@@ -9,13 +9,15 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <title>Fastkart.</title>
   </head>
   <body>
     <header class="header">
       <section class="header__main">
-        <section class="bg-green">
+        <section class="bg-green" >
           <section class="bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
             <span class="buy__text"
             >Somethng you love is now on sale!
@@ -39,26 +41,28 @@
         </section>
       </section>
     
-        <section class="pt-5 d-flex justify-content-between align-items-center container sticky-top">
-          <section class="pt-2 d-flex align-items-center">
-           <figure class="">
-            <img src="./imgs/logo.png" alt="" srcset="" class="" class="d-flex" style="width: 150.65px;height:26.863px;">
-           </figure>
-          </section>
-          <section class="d-flex ">
-            <div class="d-flex ">
-              <button type="button" class="rounded-1  w-5 h-30  border-0" >
-                <span class="material-symbols-outlined p-2 bg-grey  w-100" id="location__ico">
-                  location_on
-                </span>
-              </button>
-              <form class="d-flex " role="search">
-                <input class="form-control ms-2" type="search" placeholder="Search" aria-label="Search" style="width: 450px;">
-                <button class="btn bg-green " type="submit"><span class="material-symbols-outlined " id="search__ico">
-                  search
-                </span></button>
-              </form>
-            </div>
+        <section class="" id="navbar_top" >
+          <div class="pt-3 d-flex justify-content-between align-items-center container">
+
+            <section class="pt-2 d-flex align-items-center">
+              <figure class="">
+                <img src="./imgs/logo.png" alt="" srcset="" class="" class="d-flex" style="width: 150.65px;height:26.863px;">
+              </figure>
+            </section>
+            <section class="d-flex ">
+              <div class="d-flex ">
+                <button type="button" class="rounded-1  w-5 h-30  border-0" >
+                  <span class="material-symbols-outlined p-2 bg-grey  w-100" id="location__ico">
+                    location_on
+                  </span>
+                </button>
+                <form class="d-flex " role="search">
+                  <input class="form-control ms-2" type="search" placeholder="I'm searching for..." aria-label="Search" style="width: 450px;">
+                  <button class="btn bg-search " type="submit"><span class="material-symbols-outlined " id="search__ico">
+                    search
+                  </span></button>
+                </form>
+              </div>
           </section>
           <section class="d-flex ">
             <button type="button" id="phone" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
@@ -68,17 +72,22 @@
               <span class="material-symbols-outlined"> favorite </span>
             </button>
             <button type="button" id="cart" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
-              <span class="material-symbols-outlined"> shopping_cart </span>
+              
+              <span class="material-symbols-outlined position-relative"> shopping_cart  <span class="position-absolute top-0 start-100 translate-middle badge rounded-1 bg-red alertpop">
+                <span id="cart-items">1</span>
+                <span class="visually-hidden">unread messages</span>
+              </span></span>
             </button>
             <button type="button" id="account" class="text-dark border-0 pointer-event bg-white ps-2 pe-3">
-              <span class="material-symbols-outlined"> person </span>
+              <a href="./pages/login.html" class="text-decoration-none text-black"> <span class="material-symbols-outlined">person </span></a>
             </button>
           </section>
+        </div>
         </section>
         <section class="pt-4 justify-content-between align-items-center container d-flex">
           <button type="button" id="all__category" class="d-flex border-0 align-items-center justify-content-center flex-shrink-0 pointer-event rounded-1 bg-green text-white" style="padding: 26.950px 13.650px; width: 207.550px; height:51.300px ;">
-            <span class="material-symbols-outlined" id="span__all"> list </span
-            >All Categories
+            <span class="material-symbols-outlined" id="span__all" > list </span
+            > <a href="#category" class="text-decoration-none text-reset">All Categories</a>
           </button>
           <nav class="d-flex gap-5 ps-5">
             <ul class="d-flex gap-5 list-unstyled">
@@ -134,7 +143,7 @@
               <span class="offer__tittle">Exclusive offer <span class="span__off0">30% Off</span></span>
               <span class="h1__text">STAY HOME & DELIVERED YOUR<span class="high__light">DAILY NEEDS</span></span>
               <span class="big__small__font">Vegetables contain many vitamins and minerals that are good for your health</span>
-              <button type="button" class="shop__now">Shop Now!  <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+              <button type="button" class="shop__now">Shop Now!  <i class="fa-solid fa-arrow-right-long ps-1 fs-6 hvr-forward "></i></button>
             </div>
           </section>
           <div class="grid row col-4 gap-4">
@@ -143,7 +152,7 @@
               <span class="small__off">45%<span class="test">OFF</span></span>
               <span class="small__header1">Nut Collection</span>
               <span class="small__p">We deliver organic vetetables & fruits</span>
-              <button type="button">Shop now  <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+              <button type="button">Shop now  <i class="fa-solid fa-arrow-right-long ps-1 fs-6 hvr-forward "></i></button>
             </div>
           </section>
 
@@ -153,7 +162,7 @@
                <span class="small__header1">Healthy Food</span>
                <span class="small__header2">Organic Market</span>
                <span class="small__p">Start your daily shopping with som...</span>
-               <button type="button" class="">Shop now  <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+               <button type="button" class="">Shop now  <i class="fa-solid fa-arrow-right-long ps-1 fs-6 hvr-forward "></i></button>
               </div>
             </section>
             
@@ -166,8 +175,8 @@
                  <span class="small__header fw-bold">Hot Deals on New Items</span>
                  <span class="small__p2">Daily Essentials Eggs & Dairy</span>
                 </section>
-              <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
-               </div>
+              <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6 hvr-forward "></i></button>
+               </div> 
             </section>
           </div>
           <section class="main__small__4 col-md-4 ps-0">
@@ -177,7 +186,7 @@
               <span class="small__header fw-bold">Buy More & Save More</span>
               <span class="small__p2">Fresh Vegetables</span>
             </section>
-            <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+            <button type="button" class="ps-2 text-white ">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6 hvr-forward "></i></button>
           </div>
           </section>
           <section class="main__small__5 col-md-4 ps-0">
@@ -187,147 +196,135 @@
               <span class="small__header fw-bold">Organic Meat Preapared</span>
               <span class="small__p2">Delivered to Your Home</span>
             </section>
-            <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6"></i></button>
+            <button type="button" class="ps-2 text-white">Shop now <i class="fa-solid fa-arrow-right-long ps-1 fs-6 hvr-forward "></i></button>
             </div>
           </section>
         </section>
       </section>
         </section>
-        <section class="row">
+        <section class="row" id="category">
           <aside class="col-3 lista">
             
-              <div class=" category d-flex flex-column align-items-baseline gap-4  mt-4 pt-4 pe-4 pb-4 ps-2 rounded ">
+              <div class=" category d-flex flex-column align-items-baseline gap-4  mt-4 pt-4 pe-4 pb-4 ps-2 rounded mb-3 ">
                 <div class="position-relative box ps-2">
-                <h1 class=" fs-5 ">Category</h1>
+                <h1 class=" fs-5" >Category</h1>
               </div>
             
               <ul class="list-unstyled">
+                <li class="" hidden>
+                  <button name="all" hidden class="d-none">All</button>
+                </li>
                 <li>
-                  <img src="./imgs//vegetable.svg" alt="" srcset="">
-                  <button type="button">Vegetables & Fruit </button>
+                  <img src="./imgs/vegetable.svg" alt="" srcset="">
+                  <button type="button" name="Vegetables&Fruit">Vegetables & Fruit </button>
                 </li>
                 <li>
                   <img src="./imgs/cup.svg" alt="" srcset="">
-                  <button type="button">Beverages</button>
+                  <button  name="Beverages">Beverages</button>
                 </li>
                 <li>
                   <img src="./imgs/meats.svg" alt="" srcset="">
-                  <button type="button">Meats & Seafood</button>
+                  <button type="button" name="Meats&SeaFood">Meats & Seafood</button>
 
                 </li>
                 <li>
                   <img src="./imgs/breakfast.svg" alt="" srcset="">
-                  <button type="button">Breakfast & Dairy</button>
+                  <button type="button" name="Breakfast&Dairy">Breakfast & Dairy</button>
                 </li>
                 <li>
                   <img src="./imgs/frozen.svg" alt="" srcset="">
-                  <button type="button">Frozen Foods</button>
+                  <button type="button" name="FrozenFoods">Frozen Foods</button>
                 </li>
                 <li>
-                  <img src="./imgs/biscuit.svg" alt="" srcset="">
-                  <button type="button">Biscuits & Snacks</button>
+                  <img src="./imgs/biscuit.svg" alt="s" srcset="">
+                  <button type="button" name="Biscuits&Snacks">Biscuits & Snacks</button>
 
                 </li>
                 <li>
                   <img src="./imgs/grocery.svg" alt="" srcset="">
-                  <button type="button">Grocery & Staples</button>
+                  <button type="button" name="Grocery&Staples">Grocery & Staples</button>
 
                 </li>
                 <li>
                   <img src="./imgs/drink.svg" alt="" srcset="">
-                  <button type="button">Wines & Alcochol Drinks</button>
+                  <button type="button" name="alcohol">Wines & Alcochol Drinks</button>
 
                 </li>
                </ul>
             </div>
           
           </aside>
-          <section class="col-9">
+          <section class="col-9 mb-3">
           <section class="top__save">
             <h1 class="top pt-4">Top Save Today</h1>
-            <div class="pb-4">
-              <figure class="title-leaf m-0">
-                <span class="material-symbols-outlined">
+            <div class="pb-4 container">
+              <figure class="title-leaf m-0 d-flex align-content-between justify-content-between align-baseline">
+                <span class="material-symbols-outlined plant">
                   psychiatry
                 </span>
+                <button type="button" class="expire-time ms-0 mt-0" id="demo"></button>
               </figure>
+              
               <span
               >Don't mis this opportunity at a special discount just for this
-              week.</span
-              >
-              <button type="button" class="expire-time ms-4" id="demo"></button>
+              week.</span>
+              
             </div>
+
+            
           </section>
-          <section class="products__cards container bg-black">
-            <div class="card row">
-              <div class="options d-flex gap-3  bg-danger position-absolute top-50 align-content-center justify-content-center">
-                <button type="button"><span class="material-symbols-outlined heart">
-                  favorite
-                </span></button>
-                <button type="button">
-                  <span class="material-symbols-outlined">
-                    autorenew
-                    </span>
-                </button>
-                <button>
-                  <span class="material-symbols-outlined">
-                    visibility
-                    </span>
-                </button>
-              </div>
-              <figure>
-                <img src="./imgs/fantasy-cookie.webp" alt="" srcset="" />
-              </figure>
-              <span class="card__h">Fantasy Crunchy Choco Chip Cookies</span>
-              <span class="card__price"
-                >$26.69 <span class="card__discount">28.56</span></span
-              >
-              <figure class="card__starts">
-                <!-- <img src="" alt="" /> -->
-                <span class="card__stock">In stock</span>
-              </figure>
-              <div class="card__add">
-                <span class="add__atom">Add
-                <button type="button"><span class="material-symbols-outlined">
-                  add
-                  </span></button>
-              </span>
-              </div>
-            </div>
+          <div class="products__cards container row h-50 containerProducts" id="containerProducts">
+            
+          </div>
+          
           </section>
         </section>
         </section>
         
     </main>
-    <footer class="footer">
-      <div class="footer__col1">
-        <figure>
-          <img src="" alt="" srcset="" />
-        </figure>
-        <span
+    <div class="footer-bg pt-5">
+
+    
+    <footer class="footer container">
+      <div class="row d-lfex align-content-center align-items-start justify-content-center">
+
+     
+      <div class="footer__col1 col-3">
+        <figure class="">
+          <img src="./imgs/logo.png" alt="" srcset="" class="" class="d-flex" style="width: 150.65px;height:26.863px;">
+         </figure>
+        <span class=""
           >In publishing and graphic desing, lorem ipsum is a place holder text
           commonly used to demostrate the visual form</span
         >
-        <span>1418 Riverwood Drive, CA 96052, US</span>
-        <span>support@fastkart.com</span>
+        <div class="mt-3 d-flex flex-column justify-content-center align-content-center">
+          <span class="d-flex mb-3"><span class="material-symbols-outlined pe-1 fw-light">
+            home
+            </span> 1418 Riverwood Drive, CA 96052, US</span>
+          <span class="d-flex"> <span class="material-symbols-outlined pe-1 fw-light">
+            mail
+            </span> support@fastkart.com</span>
+        </div>
       </div>
-      <div class="footer__col2">
+      <div class="footer__col2 col-2">
         <h3>Categories</h3>
-        <span>Vegetables & Fruit</span>
-        <span>Beverages</span>
-        <span>Meats & Seafood</span>
-        <span>Frozen Foods</span>
-        <span>Biscuits & Snacks</span>
-        <span>Grocery & Staples</span>
+        <div class="footer-cat">
+          <span>Vegetables & Fruit</span>
+          <span>Beverages</span>
+          <span>Meats & Seafood</span>
+          <span>Frozen Foods</span>
+          <span>Biscuits & Snacks</span>
+          <span>Grocery & Staples</span>
+        </div>
       </div>
-      <div class="footer__col3">
+      <div class="footer__col3 col-2">
         <h3>Useful Links</h3>
         <span>Home</span>
         <span>Shop</span>
         <span>About Us</span>
         <span>Contact US</span>
       </div>
-      <div class="footer__col4">
+      <div class="footer__col4 col-2">
         <h3>Help Center</h3>
         <span>Your Order</span>
         <span>Your Account</span>
@@ -336,41 +333,63 @@
         <span>Search</span>
         <span>FAQ</span>
       </div>
-      <div class="footer__col5">
+      <div class="footer__col5 col-3">
         <h3>Contact us</h3>
-        <div class="col5__number">
-          <span>Hotline 24/7: </span>
-          <span>+91 888 104 2340</span>
+        <div class="col5__number border-bottom mb-3">
+          <span class="phone mb-0"> 
+            <span class="material-symbols-outlined  fw-light me-2">
+            call
+            </span>
+          <span class="hotline mb-0"> Hotline 24/7:</span>
+         </span>
+          <span class="fw-bold d-flex mb-4 number">+91 888 104 2340</span>
         </div>
-        <div class="col5__email">
-          <span>Email Address</span>
-          <span>fastkart@hotmail.com</span>
+        <div class="col5__email border-bottom mb-3">
+          <span class="email mb-0"><span class="material-symbols-outlined pe-1 fw-light me-2">
+            mail
+            </span> <span class="hotline mb-0">
+              
+              Email Address
+            </span>
+          </span>
+          <span class="fw-bold d-flex mb-4 position-relative email-2">fastkart@hotmail.com</span>
         </div>
         <div class="col5__download">
-          <span>Download App:</span>
-          <figure>
-            <img src="" alt="" srcset="" />
-            <img src="" alt="" srcset="" />
+          <span class="download">Download App:</span>
+          <figure class="app-icons">
+            <img src="./imgs/playstore.png" alt="" srcset="" />
+            <img src="./imgs/appstore.png" alt="" srcset="" />
           </figure>
         </div>
       </div>
-      <section class="footer__cc">
-        <span>2022 Fastkart All rights reserved</span>
-        <figure>
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
-          <img src="" alt="" srcset="" />
+      <section class="footer__cc col-12 d-flex justify-content-between align-items-center ">
+        <div class="col-3">
+          <span>&copy; 2022 Fastkart All rights reserved</span>
+        </div>
+        <figure class="col-3">
+          <img src="./imgs/payment.png" alt="" srcset="" />
         </figure>
-        <span>Stay connected:</span>
-        <span>F</span>
-        <span>T</span>
-        <span>I</span>
-        <span>P</span>
+        <div class="social-media col-2 d-flex">
+          <span style="font-size: 15px;" class="me-3">Stay connected:</span>
+          <ul class="list-unstyled gap-2 social">
+            <li>
+              <a href="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            </li>
+          </ul>
+        </div>
       </section>
+    </div>
     </footer>
-
+  </div>
     
 <script>
   // Set the date we're counting down to
@@ -395,7 +414,7 @@
   document.getElementById("demo").innerHTML =`  <span class="material-symbols-outlined timer d-flex align-conten-evenly gap-2 align-tems-center">
 schedule
 
-<span class="timer pt-1">Expires in: ${days} d ${hours} h ${minutes} m  ${seconds} s 
+<span class="timer pt-1">Expires in: ${days} : ${hours} : ${minutes} :  ${seconds} 
   </span>
 </span>
 
@@ -407,8 +426,14 @@ schedule
     }
   }, 1000);
   </script>
-  
     <script src="https://kit.fontawesome.com/a538994658.js" crossorigin="anonymous"></script>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/script.js" type="module"></script>
+    <script src="./script/style.js"></script>
+    <script src="./script/wishlist.js" type="module"></script>
   </body>
 </html>

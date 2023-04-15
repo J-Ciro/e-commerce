@@ -2,14 +2,455 @@
   "productos": [
     {
       "id": 0,
-      "category": "Snacks",
+      "category": "Biscuits&Snacks",
       "name": "Yumitos Chilli Sprinkled Potato Chips 100g",
+      "img":"./imgs/chips.png",
       "weight": "100g",
       "price": "$10.25",
-      "discount": "$12.36"
+      "discount": "$12.36",
+      "quantity": 100,
+      "stars": 4
+    },
+    {
+      "id": 1,
+      "category": "Biscuits&Snacks",
+      "name": "Fantasy Crunchy Choco Chip Cookies",
+      "img":"./imgs/cookie.png",
+      "weight": "100g",
+      "price": "$26.69",
+      "discount": "$28.56",
+      "quantity": 20
+    },
+    {
+      "id":2,
+      "category":"Vegetables&Fruit",
+      "name":"Danvers Carrots",
+      "img":"./imgs/carrot.png",
+      "weight": "250g",
+      "price": "$6.99",
+      "discount": "",
+      "quantity": 20
+    },
+    
+    {
+      "id":3,
+      "category":"Vegetables&Fruit",
+      "name": "Russet Potato",
+      "img":"./imgs/potato.png",
+      "weight":"1Lb",
+      "price": "$12.96",
+      "discount": "$15.23",
+      "quantity": 1000
+    },
+    
+    {
+      "id":4,
+      "category":"Vegetables&Fruit",
+      "name": "Broccoli",
+      "img":"./imgs/broccoli.png",
+      "weight":"1Lb",
+      "price": "$12.96",
+      "discount": "$15.23",
+      "quantity": 1000
+    },
+    {
+      "id":5,
+      "category":"Vegetables&Fruit",
+      "name": "StrwayBerry",
+      "img":"./imgs/starwberry.png",
+      "weight":"2Lb",
+      "price": "$17.96",
+      "discount": "$18.23",
+      "quantity": 1000
+    },
+
+    {
+      "id":6,
+      "category":"Vegetables&Fruit",
+      "name": "Pear",
+      "img":"./imgs/pear.png",
+      "weight":"2Lb",
+      "price": "$19.96",
+      "discount": "$21.00",
+      "quantity": 1000
+    },
+    {
+      "id":7,
+      "category":"Vegetables&Fruit",
+      "name": "Mango",
+      "img":"./imgs/mango.png",
+      "weight":"1Lb",
+      "price": "$14.99",
+      "discount": "$20.00",
+      "quantity": 1000
+    },
+    {
+      "id":8,
+      "category":"Vegetables&Fruit",
+      "name": "Pear",
+      "img":"./imgs/pear.png",
+      "weight":"2Lb",
+      "price": "$19.96",
+      "discount": "$21.00",
+      "quantity": 1000
+    },
+    {
+      "id":9,
+      "category":"Beverages",
+      "name": "Te Tosh - Chamomile",
+      "img":"./imgs/te_tosh.png",
+      "weight":"20g",
+      "price": "$6.96",
+      "discount": "$9.00",
+      "quantity": 23
+    },
+    {
+      "id":10,
+      "category":"Beverages",
+      "name": "Te Tosh - Frutos rojos",
+      "img":"./imgs/te_tosh2.png",
+      "weight":"20g",
+      "price": "$5.96",
+      "discount": "$9.00",
+      "quantity": 23
+    },
+    {
+      "id":11,
+      "category":"Beverages",
+      "name": "Volcan Dark Roast Coffee - Juan Valdez",
+      "img":"./imgs/volcan.webp",
+      "weight":"20g",
+      "price": "$8.96",
+      "discount": "$9.00",
+      "quantity": 23
+    },
+
+    {
+      "id":12,
+      "category":"Beverages",
+      "name": "Postobon Manzana",
+      "img":"./imgs/postobon.jpg",
+      "weight":"20g",
+      "price": "$2.31",
+      "discount": "$11.00",
+      "quantity": 23
+    },
+    {
+      "id":13,
+      "category":"Beverages",
+      "name": "Hit - Nectar de Pera",
+      "img":"./imgs/jugo_pera.png",
+      "weight":"350mL",
+      "price": "$3.96",
+      "discount": "$11.00",
+      "quantity": 23
+    },
+    {
+      "id":14,
+      "category":"Meats&SeaFood",
+      "name": "RibEye",
+      "img":"./imgs/rib-eye.png",
+      "weight":"350mg",
+      "price": "$9.96",
+      "discount": "$11.00",
+      "quantity": 23
+    },
+    {
+      "id":15,
+      "category":"Meats&SeaFood",
+      "name": "Australian Wagyu",
+      "img":"./imgs/Australian-Wagyu.webp",
+      "weight":"200mg",
+      "price": "$16.96",
+      "discount": "$11.00",
+      "quantity": 23
+    },
+    {
+      "id":16,
+      "category":"Meats&SeaFood",
+      "name": "Lobster",
+      "img":"./imgs/lobster.png",
+      "weight":"200mg",
+      "price": "$27.96",
+      "discount": "$34.00",
+      "quantity": 23
+    },
+    {
+      "id":17,
+      "category":"Meats&SeaFood",
+      "name": "Salmon Slices",
+      "img":"./imgs/salmon.png",
+      "weight":"200mg",
+      "price": "$18.96",
+      "discount": "$19.99",
+      "quantity": 23
+    },
+   
+    {
+      "id":18,
+      "category":"Meats&SeaFood",
+      "name": "Dryed Seaweed",
+      "img":"./imgs/seaweed.png",
+      "weight":"200mg",
+      "price": "$6.96",
+      "discount": "$11.00",
+      "quantity": 23
+    },
+    {
+      "id":19,
+      "category":"Breakfast&Dairy",
+      "name": "Egg's",
+      "img":"./imgs/eggs.png",
+      "weight":"200mg",
+      "price": "$6.96",
+      "discount": "$7.00",
+      "quantity": 23
+    },
+   
+    {
+      "id":20,
+      "category":"Breakfast&Dairy",
+      "name": "Egg's",
+      "img":"./imgs/alqueria.png",
+      "weight":"200mg",
+      "price": "$6.96",
+      "discount": "$7.00",
+      "quantity": 23
+    },
+   
+    {
+      "id":21,
+      "category":"Breakfast&Dairy",
+      "name": "American Bread",
+      "img":"./imgs/bread.png",
+      "weight":"200mg",
+      "price": "$6.96",
+      "discount": "$7.00",
+      "quantity": 23
+    },
+    {
+      "id":22,
+      "category":"Breakfast&Dairy",
+      "name": "Avena",
+      "img":"./imgs/avena.png",
+      "weight":"300mg",
+      "price": "$5.96",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":23,
+      "category":"Breakfast&Dairy",
+      "name": "Yogurt",
+      "img":"./imgs/greek.png",
+      "weight":"22mg",
+      "price": "$5.96",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":24,
+      "category":"FrozenFoods",
+      "name": "McCain Crispy French Fries",
+      "img":"./imgs/papas-delgadas.png",
+      "weight":"22mg",
+      "price": "$7.96",
+      "discount": "",
+      "quantity": 23
+    },
+
+    {
+      "id":25,
+      "category":"FrozenFoods",
+      "name": "Chuzos de Pollo Friko BL 10UND",
+      "img":"./imgs/chuzo-pollo.jpg",
+      "weight":"22mg",
+      "price": "$12.96",
+      "discount": "",
+      "quantity": 23
+    },
+   
+    {
+      "id":26,
+      "category":"FrozenFoods",
+      "name": "Wings FRIKO BBQ",
+      "img":"./imgs/alitas-bbq.png",
+      "weight":"22mg",
+      "price": "$12.96",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":27,
+      "category":"FrozenFoods",
+      "name": "Frozen Veggies ",
+      "img":"./imgs/verduras.png",
+      "weight":"22mg",
+      "price": "$11.96",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":28,
+      "category":"FrozenFoods",
+      "name": "Nuggets de Pollo Apanados ",
+      "img":"./imgs/nuggets.png",
+      "weight":"22mg",
+      "price": "$9.96",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":29,
+      "category":"Biscuits&Snacks",
+      "name": "Lays Sour Cream ",
+      "img":"./imgs/sour.png",
+      "weight":"80g",
+      "price": "$4.96",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":30,
+      "category":"Biscuits&Snacks",
+      "name": "Pringles Sour Cream ",
+      "img":"./imgs/pringles.png",
+      "weight":"80g",
+      "price": "$5.96",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":31,
+      "category":"Biscuits&Snacks",
+      "name": "Chocolatina Jumbo de Mani ",
+      "img":"./imgs/jumbo-mani.png",
+      "weight":"80g",
+      "price": "$4.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":32,
+      "category":"Grocery&Staples",
+      "name": "Garlic Powder ",
+      "img":"./imgs/garlic-powder.png",
+      "weight":"80g",
+      "price": "$2.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":33,
+      "category":"Grocery&Staples",
+      "name": "Refisal Baja en Sodio ",
+      "img":"./imgs/baja-sodio.png",
+      "weight":"80g",
+      "price": "$4.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":34,
+      "category":"Grocery&Staples",
+      "name": "Sal Rosada del Himalaya ",
+      "img":"./imgs/sal-rosada.png",
+      "weight":"80g",
+      "price": "$5.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":35,
+      "category":"Grocery&Staples",
+      "name": "Mix de Pimientas ",
+      "img":"./imgs/MIX-DE-PIMIENTA.png",
+      "weight":"80g",
+      "price": "$3.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":36,
+      "category":"Grocery&Staples",
+      "name": "Duraznos en Mitades en Almibar",
+      "img":"./imgs/duraznos.webp",
+      "weight":"80g",
+      "price": "$8.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":37,
+      "category":"alcohol",
+      "name": "Vino Blanco Gato Negro Varietal ",
+      "img":"./imgs/gato-negro.png",
+      "weight":"80g",
+      "price": "$30.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":38,
+      "category":"alcohol",
+      "name": "Ron Medellín 12 Años ",
+      "img":"./imgs/ron-medellin.png",
+      "weight":"750mL",
+      "price": "$202.92",
+      "discount": "",
+      "quantity": 23
+    },
+    {
+      "id":38,
+      "category":"alcohol",
+      "name": "Cerveza Corona EXTRA ",
+      "img":"./imgs/corona.png",
+      "weight":"750mL",
+      "price": "$3.69",
+      "discount": "$4.00",
+      "quantity": 23
+    },
+    {
+      "id":38,
+      "category":"alcohol",
+      "name": "Tequila Jose Cuervo Especial ",
+      "img":"./imgs/tequila.webp",
+      "weight":"750mL",
+      "price": "$21.69",
+      "discount": "$30.00",
+      "quantity": 23
+    },
+    {
+      "id":38,
+      "category":"alcohol",
+      "name": "Vodka Smirnoff Lulo ",
+      "img":"./imgs/vodka-lulo.png",
+      "weight":"750mL",
+      "price": "$50.49",
+      "discount": "$60.00",
+      "quantity": 23
+    }
+
+
+
+  ],
+
+  "usuarios": [
+    {
+      "id":0,
+      "name":"Juan Esteban",
+      "username":"Juanes123",
+      "password":"123abc",
+      "role":0
+    },
+    {
+      "id":1,
+      "name":"Camila Alvarez",
+      "username":"Cami123",
+      "password":"alvarez123",
+      "role":1
     }
   ],
-  "usuarios": [],
   "favoritos": [],
   "carrito": []
 }

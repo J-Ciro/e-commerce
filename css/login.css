@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Average&family=Raleway:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;500;700;800&display=swap');
+
+:root{
+  --a-background-color: rgb(14, 164, 135);
+  --bs-background-color: grey;
+
+  
+
+}
+.bg-green{
+  background-color: var( --a-background-color);
+}
+.bg-search{
+  position: relative !important;
+  background-color: rgb(255, 165, 59) !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  left: -20px;
+  color: white !important;
+}
+
+.bg-grey{
+  color: var(--bs-background-color);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Public Sans', sans-serif;
+
+}
+
+
+.timer{
+  
+  font-size: 16px;
+}
+
+.card-1{
+  border-radius: 10px  0px 0px 0px;
+  background-color: red;
+  width: 301.375px;
+  height: 301.375px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.card__add{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+ 
+}
+
+.card__add .add__atom{
+  display: flex;
+  background-color: rgb(248, 248, 248);
+  width: 220px;
+  padding: 8px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.add__atom button{
+  position: absolute;
+  left: 225px;
+ 
+  
+}
+.add__atom .add-icon{
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+ 
+}
+
+.card__add button{
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  width: 25px;
+  height:25px;
+  color: var(--a-background-color);
+  
+}
+
+.card__h{
+  font-size: 14px;
+  font-weight: bold;
+}
+.card__price{
+  color: var(--a-background-color)
+}
+
+.card__discount{
+  color: gray;
+  font-size: 12px;
+  text-decoration: line-through;
+}
+
+.card__stock{
+  font-size: 16px;
+  color: var(--a-background-color);
+}
+
+.card img{
+  width: auto;
+  height: 250px;
+
+}
+
+.figures{
+  display: flex;
+  justify-content: center;
+}
+
+.card button{
+  display: flex;
+    border: 0px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--a-background-color);
+}
+
+.buttons__opti {
+  display: flex;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  color: black;  
+}
+
+
+.card:hover .options {
+  transform: translateY(0);
+}
+.options .items {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  color: black; 
+}
+
+.n-ppost:hover .items {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--a-background-color) !important;
+}
+
+
+.options{
+  position: absolute !important;
+  top: 180px;
+  left: 85px;
+}
+
+
+
+.hvr-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-forward:hover, .hvr-forward:focus, .hvr-forward:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+
+.footer-cat span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer__col3 span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer__col4 span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer__col5 span{
+  margin-bottom: 10px;
+  display: flex;
+}
+
+
+.app-icons{
+  display: flex;
+  position: relative;
+  left: -13px;
+}
+.app-icons img{
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+
+.footer-bg{
+  background-color: rgb(248, 248, 248);
+}
+
+.social-media ul{
+  display: flex;
+}
+
+span .alertpop{
+font-size: 12px;
+}
+
+
+.phone,
+.email{
+color: grey;
+margin: 0;
+}
+
+.number{
+  position: relative;
+  left: 30px;
+}
+
+
+.email-2{
+  position: relative;
+  left: 35px;
+}
+.hotline{
+  font-size: 15px;
+}
+
+.download{
+  color: grey;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+.plant,
+.social i{
+ color: var(--a-background-color);
+}
+
+.bg-red{
+  background-color: rgb(255, 79, 79) !important;
+}
+
+.bg-login {
+    background-image: url(/imgs/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+}
