@@ -904,6 +904,11 @@ margin: 0;
   font-weight: 600;
 }
 
+
+.btn-delete:hover{
+cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   
 }
