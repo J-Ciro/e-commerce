@@ -9,7 +9,7 @@
 
 }
 .bg-green{
-  background-color: var( --a-background-color);
+  background-color: var( --a-background-color) !important;
 }
 .bg-search{
   position: relative !important;
@@ -272,3 +272,6 @@ margin: 0;
     width: auto;
     height: 100%;
 }
+
+
+.bg-green

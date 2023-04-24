@@ -1,5 +1,11 @@
 import getUser from "../services/getUser.js";
 
+const logo = document.querySelector(".logo")
+
+logo.addEventListener("click", () =>{
+  window.location.href = "../index.html"
+})
+
 //-----------------------Declarar Variables y constantes---------
 const formLogin = document.querySelector(".main__form");
 
