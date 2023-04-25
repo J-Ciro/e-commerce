@@ -45,8 +45,8 @@ $(document).ready(function(){
             </figure>
           </section>
           
-        <section class="d-flex admin-name ">
-         
+        <section class="d-block admin-name ">
+            
         </section>
       </div>
       </section>
@@ -63,79 +63,80 @@ $(document).ready(function(){
                         <h2>Order <b>Details</b></h2>
                     </div>
                     <div class="col-sm-8">						
-                        <button type="button" class="btn bg-green text-white "><i class="material-icons">&#xE146;</i>Add Product</button>
+                        <button type="button" class="btn bg-danger text-white"  id="btn-logout"><i class="material-icons"></i>Log out</button>
+                        <button type="button" class="btn bg-green text-white btn-add-product" data-toggle="modal" data-target="#addNew"><i class="material-icons">&#xE146;</i>Add Product</button>
                         <button type="button" class="btn bg-gray"  id="btn-pucharses"><i class="material-icons">&#xe8cc;</i>Pucharses</button>
-                        <button type="button" class="btn bg-gray btn-view-all"  id=""><i class="material-icons">&#xe8f4;</i>View Products</button>
+                        <button type="button" class="btn bg-gray btn-view-all"  ><i class="material-icons">&#xe8f4;</i>View Products</button>
                         
                         
                       </div>
                 </div>
             </div>
-            <div class="table-filter">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="show-entries">
-                            <span>Show</span>
-                            <select class="form-control">
-                                <option>5</option>
-                                <option>10</option>
-                                <option>15</option>
-                                <option>20</option>
-                            </select>
-                            <span>entries</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-9">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
-                        <div class="filter-group">
-                            <label>Name</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="filter-group">
-                            <label>Location</label>
-                            <select class="form-control">
-                                <option>All</option>
-                                <option>Berlin</option>
-                                <option>London</option>
-                                <option>Madrid</option>
-                                <option>New York</option>
-                                <option>Paris</option>								
-                            </select>
-                        </div>
-                        <div class="filter-group">
-                            <label>Status</label>
-                            <select class="form-control">
-                                <option>Any</option>
-                                <option>Delivered</option>
-                                <option>Shipped</option>
-                                <option>Pending</option>
-                                <option>Cancelled</option>
-                            </select>
-                        </div>
-                        <span class="filter-icon"><i class="fa fa-filter"></i></span>
-                    </div>
-                </div>
-            </div>
+
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
                       
-                        <th>#</th>
-                        <th>Package</th>
-                        <th>Name</th>
-                        <th>Price</th>						
-                        <th>Category</th>						
-                        <th>Quantity</th>
-                        <th>Delete</th>
-                        <th>Options</th>
+                        <th id="id">#</th>
+                        <th id="packages">Package</th>
+                        <th id="name">Name</th>
+                        <th id="price">Price</th>						
+                        <th id="category">Category</th>						
+                        <th id="quantity">Quantity</th>
+                        <th id="delete">Delete</th>
+                        <th id="options">Options</th>
                     </tr>
                 </thead>
                 <tbody id="table-body">
                    
                 </tbody>
             </table>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modify Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body modify-product">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+             <!-- Modal -->
+             <div class="modal fade" id="addNew" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modify Product</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body modal-add">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
             <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+                <!-- <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
                 <ul class="pagination">
                     <li class="page-item disabled"><a href="#">Previous</a></li>
                     <li class="page-item"><a href="#" class="page-link">1</a></li>
@@ -146,7 +147,7 @@ $(document).ready(function(){
                     <li class="page-item"><a href="#" class="page-link">6</a></li>
                     <li class="page-item"><a href="#" class="page-link">7</a></li>
                     <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
+                </ul> -->
             </div>
         </div>
     </div>        

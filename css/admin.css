@@ -859,11 +859,8 @@ margin: 0;
 .buttons{
   display: flex;
   justify-content: space-between;
+}
 
-}
-.modal-backdrop{
-  background-color: transparent !important;
-}
 
 .product-name{
   color: var(--a-background-color);
@@ -908,6 +905,11 @@ margin: 0;
 .btn-delete:hover{
 cursor: pointer;
 }
+
+.btn-actualizar:hover{
+cursor: pointer;
+}
+
 
 @media only screen and (max-width: 600px) {
   

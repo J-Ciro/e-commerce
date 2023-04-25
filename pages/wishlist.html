@@ -21,7 +21,7 @@
     <header class="header">
       <section class="header__main">
         <section class="bg-green" >
-          <section class="bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
+          <section class=" header__green-content bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
             <span class="buy__text"
             >Somethng you love is now on sale!
             <a href="" class="text-decoration-none text-white fw-bold border-bottom">Buy Now!</a>
@@ -44,53 +44,52 @@
         </section>
       </section>
     
-        <section class="" id="navbar_top" >
-          <div class="pt-3 d-flex justify-content-between align-items-center container">
-
-            <section class="pt-2 d-flex align-items-center">
-              <figure class="">
-                <a href="../index.html">
-
-                  <img src="../imgs/logo.png" alt="" srcset=""  class="d-flex logo" style="width: 150.65px;height:26.863px;">
-                </a>
-              </figure>
-            </section>
-            <section class="d-flex ">
-              <div class="d-flex ">
-                <button type="button" class="rounded-1  w-5 h-30  border-0" >
-                  <span class="material-symbols-outlined p-2 bg-grey  w-100" id="location__ico">
-                    location_on
-                  </span>
+      <div class="d-flex pt-3 justify-content-between align-content-center container " id="navbar_top">
+    
+        <section class="pt-2 d-flex align-items-center navbar__content">
+                  <figure class="">
+                    <img src="../imgs/logo.png" alt="" srcset=""  class="d-flex logo" style="width: 150.65px;height:26.863px;">
+                  </figure>
+                </section>
+                <section class="d-flex ">
+                  <div class="d-flex ">
+                    <button type="button" class="rounded-1  w-5 h-30  border-0" >
+                      <span class="material-symbols-outlined p-2 bg-grey  w-100" id="location__ico">
+                        location_on
+                      </span>
+                    </button>
+                    <form class="d-flex " role="search">
+                      <input class="form-control ms-2" type="search" placeholder="I'm searching for..." aria-label="Search" style="width: 450px;">
+                      <button class="btn bg-search " type="submit"><span class="material-symbols-outlined " id="search__ico">
+                        search
+                      </span></button>
+                    </form>
+                  </div>
+                </section>
+              <section class="d-flex section__buttons ">
+                <button type="button" id="phone" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
+                  <span class="material-symbols-outlined"> phone_in_talk </span>
                 </button>
-                <form class="d-flex " role="search">
-                  <input class="form-control ms-2" type="search" placeholder="I'm searching for..." aria-label="Search" style="width: 450px;">
-                  <button class="btn bg-search " type="submit"><span class="material-symbols-outlined " id="search__ico">
-                    search
-                  </span></button>
-                </form>
-              </div>
-          </section>
-          <section class="d-flex ">
-            <button type="button" id="phone" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
-              <span class="material-symbols-outlined"> phone_in_talk </span>
-            </button>
-            <button type="button" id="favorite" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end favorites">
-              <span class="material-symbols-outlined"> favorite </span>
-            </button>
-            <button type="button" id="cart" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end shopping" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        
-              <span class="material-symbols-outlined position-relative "> shopping_cart  <span class="position-absolute top-0 start-100 translate-middle badge rounded-1 bg-red alertpop">
-                <span id="cart-items">0</span>
-                <span class="visually-hidden">unread messages</span>
-                
-              </span></span>
-            </button>
-            <button type="button" id="account" class="text-dark border-0 pointer-event bg-white ps-2 pe-3">
-              <a href="./login.html" class="text-decoration-none text-black"> <span class="material-symbols-outlined">person </span></a>
-            </button>
+                <button type="button" id="favorite" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end favorites">
+                  <span class="material-symbols-outlined"> favorite </span>
+                </button>
+                <button type="button" id="cart" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end shopping" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                  </button> -->
+                  <span class="material-symbols-outlined position-relative "> shopping_cart  <span class="position-absolute top-0 start-100 translate-middle badge rounded-1 bg-red alertpop">
+                    <span id="cart-items">0</span>
+                    <span class="visually-hidden">unread messages</span>
+                    
+                  </span></span>
+                </button>
+                <button type="button" id="account" class="text-dark border-0 pointer-event bg-white ps-2 pe-3">
+                  <a href="" class="text-decoration-none text-black"> <span class="material-symbols-outlined">person </span></a>
+                </button>
+              </section>
+            </div>
           </section>
         </div>
-        </section>
 
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="none" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -156,12 +155,12 @@
   <!-- Toast -->
   
 
-        <section class="pt-4 justify-content-between align-items-center container d-flex">
+        <section class="pt-4 justify-content-between align-items-center container d-flex section__btn-light">
           <button type="button" id="all__category" class="d-flex border-0 align-items-center justify-content-center flex-shrink-0 pointer-event rounded-1 bg-green text-white" style="padding: 26.950px 13.650px; width: 207.550px; height:51.300px ;">
             <span class="material-symbols-outlined" id="span__all" > list </span
             > <a href="#category" class="text-decoration-none text-reset">All Categories</a>
           </button>
-          <nav class="d-flex gap-5 ps-5">
+          <nav class="d-flex gap-5 ps-5 nav__expand">
             <ul class="d-flex gap-5 list-unstyled">
               <li class="d-flex  pointer-event">
                 Home
@@ -196,7 +195,7 @@
               </li>
             </ul>
           </nav>
-          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event">
+          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event light-btn">
             <span class="material-symbols-outlined"> bolt </span>
           </button>
         </section>
@@ -231,7 +230,7 @@
 
     
     <footer class="footer container">
-      <div class="row d-lfex align-content-center align-items-start justify-content-center">
+      <div class="row d-lfex align-content-center align-items-start justify-content-center footer__content">
 
      
       <div class="footer__col1 col-3">
@@ -308,10 +307,10 @@
         </div>
       </div>
       <section class="footer__cc col-12 d-flex justify-content-between align-items-center ">
-        <div class="col-3">
-          <span>&copy; 2022 Fastkart All rights reserved</span>
+        <div class="col-3 copy__right">
+          <span class="footer__copyright">&copy; 2022 Fastkart All rights reserved</span>
         </div>
-        <figure class="col-3">
+        <figure class="col-3 payment-icons" >
           <img src="../imgs/payment.png" alt="" srcset="" />
         </figure>
         <div class="social-media col-2 d-flex">

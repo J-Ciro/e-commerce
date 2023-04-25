@@ -20,7 +20,7 @@
     <header class="header">
       <section class="header__main">
         <section class="bg-green" >
-          <section class="bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
+          <section class=" header__green-content bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
             <span class="buy__text"
             >Somethng you love is now on sale!
             <a href="" class="text-decoration-none text-white fw-bold border-bottom">Buy Now!</a>
@@ -42,6 +42,9 @@
           </section>
         </section>
       </section>
+    </section>
+  </header>
+
 
           <!-- Modal -->
           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -109,9 +112,9 @@
 
     
         <section class="" id="navbar_top" >
-          <div class="pt-3 d-flex justify-content-between align-items-center container">
+          <div class="pt-3 d-flex justify-content-between align-items-center container" id="navbar_top">
 
-            <section class="pt-2 d-flex align-items-center">
+            <section class="pt-2 d-flex align-items-center navbar__content">
               <figure class="">
                 <img src="../imgs/logo.png" alt="" srcset=""  class="d-flex logo" style="width: 150.65px;height:26.863px;">
               </figure>
@@ -131,7 +134,7 @@
                 </form>
               </div>
           </section>
-          <section class="d-flex ">
+          <section class="d-flex section__buttons">
             <button type="button" id="phone" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
               <span class="material-symbols-outlined"> phone_in_talk </span>
             </button>
@@ -155,7 +158,7 @@
             <span class="material-symbols-outlined" id="span__all" > list </span
             > <a href="#category" class="text-decoration-none text-reset">All Categories</a>
           </button>
-          <nav class="d-flex gap-5 ps-5">
+          <nav class="d-flex gap-5 ps-5  nav__expand">
             <ul class="d-flex gap-5 list-unstyled">
               <li class="d-flex  pointer-event">
                 Home
@@ -190,22 +193,24 @@
               </li>
             </ul>
           </nav>
-          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event">
+          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event  light-btn">
             <span class="material-symbols-outlined"> bolt </span>
           </button>
         </section>
       </section>
       <section class="main__navbar">
         <nav class="main__nav mt-4 mb-4">
-            <ul class="container pt-4 pb-4" >
-                <li class="main__cart fw-bold fs-5">Cart</li>
-                <li class="d-flex justify-content-center">
-                    <span class="material-symbols-outlined home-ico">home</span>
-                    <span> > </span>
-                    <span class="home fw-normal fs-6">Cart</span>
-                </li>
-            </ul>
-        </nav>
+          <ul class="container pt-4 pb-4" >
+              <li class="main__cart fw-bold fs-5">Cart</li>
+              <li class="d-flex justify-content-center">
+                  <span class="material-symbols-outlined home-ico">home</span>
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+                  <span class="home fw-normal fs-6">Cart</span>
+              </li>
+          </ul>
+      </nav>
      </section>
     </header>
     <main class="main d-flex align-content-center align-items-center justify-content-center mb-5 flex-column">
@@ -361,10 +366,10 @@
         </div>
       </div>
       <section class="footer__cc col-12 d-flex justify-content-between align-items-center ">
-        <div class="col-3">
-          <span>&copy; 2022 Fastkart All rights reserved</span>
+        <div class="col-3 copy__right">
+          <span class="footer__copyright">&copy; 2022 Fastkart All rights reserved</span>
         </div>
-        <figure class="col-3">
+        <figure class="col-3  payment-icons">
           <img src="../imgs/payment.png" alt="" srcset="" />
         </figure>
         <div class="social-media col-2 d-flex">

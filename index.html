@@ -4,24 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" /> 
     <link rel="icon" href="../imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Fastkart.</title>
   </head>
   <body>
     
     <header class="header">
-      <section class="header__main">
+      <section class="header__main ">
         <section class="bg-green" >
-          <section class="bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
+          <section class="header__green-content bg-green container container-sm container-lg container-sm text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
             <span class="buy__text"
             >Somethng you love is now on sale!
             <a href="" class="text-decoration-none text-white fw-bold border-bottom">Buy Now!</a>
@@ -66,7 +66,8 @@
               </div>
             </div>
           </div>
-   
+   </section>
+   </header>
 <!-- Modal -->
 <!-- Toast -->
 <div class="toast-container">
@@ -113,7 +114,7 @@
 <!-- pt-3 d-flex justify-content-between align-items-center container -->
   <div class="d-flex pt-3 justify-content-between align-content-center container " id="navbar_top">
     
-    <section class="pt-2 d-flex align-items-center">
+    <section class="pt-2 d-flex align-items-center navbar__content">
               <figure class="">
                 <img src="./imgs/logo.png" alt="" srcset=""  class="d-flex logo" style="width: 150.65px;height:26.863px;">
               </figure>
@@ -133,7 +134,7 @@
                 </form>
               </div>
             </section>
-          <section class="d-flex ">
+          <section class="d-flex section__buttons ">
             <button type="button" id="phone" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
               <span class="material-symbols-outlined"> phone_in_talk </span>
             </button>
@@ -157,12 +158,12 @@
         </div>
       </section>
     </div>
-      <section class="pt-4 justify-content-between align-items-center container d-flex " >
+      <section class="pt-4 justify-content-between align-items-center container d-flex section__btn-light" >
         <button type="button" id="all__category" class="d-flex border-0 align-items-center justify-content-center flex-shrink-0 pointer-event rounded-1 bg-green text-white" style="padding: 26.950px 13.650px; width: 207.550px; height:51.300px ;">
             <span class="material-symbols-outlined" id="span__all" > list </span
             > <a href="#category" class="text-decoration-none text-reset">All Categories</a>
           </button>
-          <nav class="d-flex gap-5 ps-5">
+          <nav class="d-flex gap-5 ps-5 nav__expand">
             <ul class="d-flex gap-5 list-unstyled">
               <li class="d-flex  pointer-event">
                 Home
@@ -197,7 +198,7 @@
               </li>
             </ul>
           </nav>
-          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event">
+          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event light-btn">
             <span class="material-symbols-outlined"> bolt </span>
           </button>
         </section>
@@ -219,7 +220,7 @@
               <button type="button" class="shop__now">Shop Now!  <i class="fa-solid fa-arrow-right-long ps-1 fs-6 hvr-forward "></i></button>
             </div>
           </section>
-          <div class="grid row col-4 gap-4">
+          <div class="grid row col-4 gap-4  small__two-cards">
           <section class="main__small__1 small1 g-col-md-12" >
             <div class="small__text">
               <span class="small__off">45%<span class="test">OFF</span></span>
@@ -240,7 +241,7 @@
             </section>
             
           </section>
-          <section class="grid row align-items-center gap-3 pt-4 col-md-12 flex-nowrap align-content-between">
+          <section class="grid row align-items-center gap-4 pt-4 col-md-12 flex-nowrap align-content-between three__cards" >
             <section class="main__small__3 col-md-4 ps-0">
               <div class="small__text2">
                 <section class="small__main__text ps-3">
@@ -327,7 +328,7 @@
             </div>
           
           </aside>
-          <section class="col-9 mb-3">
+          <section class="col-9 mb-3 products-container">
           <section class="top__save">
             <h1 class="top pt-4">Top Save Today</h1>
             <div class="pb-4 container">
@@ -359,7 +360,7 @@
 
     
     <footer class="footer container">
-      <div class="row d-lfex align-content-center align-items-start justify-content-center">
+      <div class="row d-lfex align-content-center align-items-start justify-content-center footer__content">
 
      
       <div class="footer__col1 col-3">
@@ -436,10 +437,10 @@
         </div>
       </div>
       <section class="footer__cc col-12 d-flex justify-content-between align-items-center ">
-        <div class="col-3">
-          <span>&copy; 2022 Fastkart All rights reserved</span>
+        <div class="col-3 copy__right">
+          <span class="footer__copyright">&copy; 2022 Fastkart All rights reserved</span>
         </div>
-        <figure class="col-3">
+        <figure class="col-3 payment-icons">
           <img src="./imgs/payment.png" alt="" srcset="" />
         </figure>
         <div class="social-media col-2 d-flex">

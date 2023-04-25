@@ -79,7 +79,7 @@ cartItems.forEach(product => {
     <td width='13%'>
       <h6 class='bg-grey'>Action</h6>
       <span class='color-green'>Save for later</span><br>
-      <span class='text-danger remove-span' data-btn-remove=${product.barcode} >Remove</span>
+      <button class='text-danger remove-span' data-btn-remove=${product.barcode}>Remove</button>
       
     </td>
   </tr>
