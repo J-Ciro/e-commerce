@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="../imgs/favicon.png" type="image/x-icon">    
+    <title>Fastkart.</title>
+  </head>
+  <body>
+    
+    <header class="header">
+      <section class="header__main">
+        <section class="bg-green" >
+          <section class=" header__green-content bg-green container text-white d-flex flex-row align-content-center justify-content-between align-items-center mx-auto p-2">
+            <span class="buy__text"
+            >Somethng you love is now on sale!
+            <a href="" class="text-decoration-none text-white fw-bold border-bottom">Buy Now!</a>
+          </span>
+          <li class="d-flex  pointer-event">
+            <section class="d-flex gap-2 align-content-center align-items-center flex-nowrap flex-row flex-nowrap container-fluid">
+              <figure class="d-flex gap-2 align-content-center  align-items-center p-0 m-0" >
+                <img src="../imgs/en.png" alt="flags" width="25px" height="25px"/>
+                <select name="idioms" id="idioms" class= "w-20 h-2 border-0 bg-green text-white">
+                  <option value="en">English</option>
+                  <option value="es">Spanish</option>
+              </select>
+            </figure>
+            
+            <select name="currency" id="currency" class=" d-flex border-0 bg-green text-white  ">
+              <option value="USD">USD</option>
+              <option value="COP">COP</option>
+            </select>
+          </section>
+        </section>
+      </section>
+    </section>
+  </header>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content modal__shopping">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column align-content-center justify-content-center align-items-start container-cart">
+                  
+                </div>
+                <div class="modal-footer">
+                  <div class="buy">
+                    <span>Total:</span>
+                    <span class="total-price"></span>
+                  </div>
+                  <div class="buttons">
+                    <button type="button" class="btn btn-outline-success " id="view-cart" data-bs-dismiss="modal">View Cart</button>
+                    <button type="button" class="btn bg-green text-white btn-checkout check-out">Checkout</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+<!-- Modal -->
+<!-- Toast -->
+<div class="toast-container">
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="addToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <a href="./index.html">
+
+        <img src="../imgs/logo.png" class="rounded me-2"  style="width: 64px;">
+      </a>
+      <strong class="me-auto"></strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Se ha agregado al producto al carrito
+    </div>
+  </div>
+</div>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="removeToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="../imgs/logo.png" class="rounded me-2" alt="" style="width: 64px;" >
+      <strong class="me-auto"></strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Se ha eliminado el producto correctamente
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- Toast -->
+
+    
+        <section class="" id="navbar_top" >
+          <div class="pt-3 d-flex justify-content-between align-items-center container" id="navbar_top">
+
+            <section class="pt-2 d-flex align-items-center navbar__content">
+              <figure class="">
+                <img src="../imgs/logo.png" alt="" srcset=""  class="d-flex logo" style="width: 150.65px;height:26.863px;">
+              </figure>
+            </section>
+            <section class="d-flex ">
+              <div class="d-flex ">
+                <button type="button" class="rounded-1  w-5 h-30  border-0" >
+                  <span class="material-symbols-outlined p-2 bg-grey  w-100" id="location__ico">
+                    location_on
+                  </span>
+                </button>
+                <form class="d-flex " role="search">
+                  <input class="form-control ms-2" type="search" placeholder="I'm searching for..." aria-label="Search" style="width: 450px;">
+                  <button class="btn bg-search " type="submit"><span class="material-symbols-outlined " id="search__ico">
+                    search
+                  </span></button>
+                </form>
+              </div>
+          </section>
+          <section class="d-flex section__buttons">
+            <button type="button" id="phone" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end">
+              <span class="material-symbols-outlined"> phone_in_talk </span>
+            </button>
+            <button type="button" id="favorite" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end favorites">
+              <span class="material-symbols-outlined"> favorite </span>
+            </button>
+            <button type="button" id="cart" class="text-dark border-0 pointer-event bg-white ps-2 pe-3 border-end shopping">
+              
+              <span class="material-symbols-outlined position-relative "> shopping_cart 
+              </span>
+            </span>
+            </button>
+            <button type="button" id="account" class="text-dark border-0 pointer-event bg-white ps-2 pe-3">
+              <a href="./login.html" class="text-decoration-none text-black"> <span class="material-symbols-outlined">person </span></a>
+            </button>
+          </section>
+        </div>
+        </section>
+        <section class="pt-4 justify-content-between align-items-center container d-flex">
+          <button type="button" id="all__category" class="d-flex border-0 align-items-center justify-content-center flex-shrink-0 pointer-event rounded-1 bg-green text-white" style="padding: 26.950px 13.650px; width: 207.550px; height:51.300px ;">
+            <span class="material-symbols-outlined" id="span__all" > list </span
+            > <a href="#category" class="text-decoration-none text-reset">All Categories</a>
+          </button>
+          <nav class="d-flex gap-5 ps-5  nav__expand">
+            <ul class="d-flex gap-5 list-unstyled">
+              <li class="d-flex  pointer-event">
+                Home
+                <span class="material-symbols-outlined"> expand_more </span>
+              </li>
+              <li class="d-flex  pointer-event">
+                Shop
+                <span class="material-symbols-outlined"> expand_more </span>
+              </li>
+              <li class="d-flex  pointer-event">
+                Products
+                <span class="material-symbols-outlined"> expand_more </span>
+              </li>
+              <li class="d-flex  pointer-event">
+                Mega Menu
+                <span class="material-symbols-outlined"> expand_more </span>
+              </li>
+              <li class="d-flex  pointer-event">
+        
+                Blog
+                <span class="material-symbols-outlined"> expand_more </span>
+              </li>
+              <li class="d-flex  pointer-event">
+                
+                Pages
+                <span class="material-symbols-outlined"> expand_more </span>
+              </li>
+              <li class="d-flex  pointer-event">
+                
+                Contact
+                <span class="material-symbols-outlined"> expand_more </span>
+              </li>
+            </ul>
+          </nav>
+          <button class="light d-flex bg-success-subtle border-0 p-2 rounded-1 text-success pointer-event  light-btn">
+            <span class="material-symbols-outlined"> bolt </span>
+          </button>
+        </section>
+      </section>
+      <section class="main__navbar">
+        <nav class="main__nav mt-4 mb-4">
+          <ul class="container pt-4 pb-4" >
+              <li class="main__cart fw-bold fs-5">Cart</li>
+              <li class="d-flex justify-content-center">
+                  <span class="material-symbols-outlined home-ico">home</span>
+                  <span class="material-symbols-outlined">
+                    chevron_right
+                    </span>
+                  <span class="home fw-normal fs-6">Cart</span>
+              </li>
+          </ul>
+      </nav>
+     </section>
+    </header>
+    <main class="main d-flex align-content-center align-items-center justify-content-center mb-5 flex-column">
+        <div class=" h-100 d-flex align-items-center justify-content-center align-content-center flex-column" style="width:90% ;">
+
+            <section class="main__shopp h-100">
+                <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                 
+                </tbody>
+            </table>
+
+          </div>
+          <section class="main__form mt-5">
+            <form class="form">
+              <div class="form__header">
+                <h4>Cart Total</h4>
+              </div>
+              <div class="form__cupon">
+                <label for="cupon" class="cupon-tittle">Coupon Apply</label>
+                <div>
+                  <input type="text" name="coupon" id="cupon" placeholder="Enter Coupon Code Here....">
+                  <button type="submit" id="btn-apply">Apply</button>
+                </div>
+              </div>
+              <div class="show-invoice">
+              
+              </div>
+            </form>
+          
+          </section>
+          <div class="modal fade" id="payment-prompt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Finalizar Compra</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form class="d-flex flex-column " id="form">
+                    
+                    <input type="text" placeholder="Nombre" id='user-name'class="mb-3 p-1 ">
+                    
+                    <input type="text" placeholder="Direccion" id="user-address" class="mb-3 p-1">
+                    
+                    <input type="text" placeholder="Telefono" id='user-phone' class="mb-3 p-1">
+                    
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary bg-gris text-black border-0 btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary bg-red border-0 text-white btn-pay">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        
+        
+        
+    </main>
+    <div class="footer-bg pt-5 absolute-bottom" >
+
+    
+    <footer class="footer container">
+      <div class="row d-lfex align-content-center align-items-start justify-content-center">
+
+     
+      <div class="footer__col1 col-3">
+        <figure class="">
+          <img src="../imgs/logo.png" alt="" srcset="" class="" class="d-flex" style="width: 150.65px;height:26.863px;">
+         </figure>
+        <span class=""
+          >In publishing and graphic desing, lorem ipsum is a place holder text
+          commonly used to demostrate the visual form</span
+        >
+        <div class="mt-3 d-flex flex-column justify-content-center align-content-center">
+          <span class="d-flex mb-3"><span class="material-symbols-outlined pe-1 fw-light">
+            home
+            </span> 1418 Riverwood Drive, CA 96052, US</span>
+          <span class="d-flex"> <span class="material-symbols-outlined pe-1 fw-light">
+            mail
+            </span> support@fastkart.com</span>
+        </div>
+      </div>
+      <div class="footer__col2 col-2">
+        <h3>Categories</h3>
+        <div class="footer-cat">
+          <span>Vegetables & Fruit</span>
+          <span>Beverages</span>
+          <span>Meats & Seafood</span>
+          <span>Frozen Foods</span>
+          <span>Biscuits & Snacks</span>
+          <span>Grocery & Staples</span>
+        </div>
+      </div>
+      <div class="footer__col3 col-2">
+        <h3>Useful Links</h3>
+        <span>Home</span>
+        <span>Shop</span>
+        <span>About Us</span>
+        <span>Contact US</span>
+      </div>
+      <div class="footer__col4 col-2">
+        <h3>Help Center</h3>
+        <span>Your Order</span>
+        <span>Your Account</span>
+        <span>Track Oder</span>
+        <span>Your Wishlist</span>
+        <span>Search</span>
+        <span>FAQ</span>
+      </div>
+      <div class="footer__col5 col-3">
+        <h3>Contact us</h3>
+        <div class="col5__number border-bottom mb-3">
+          <span class="phone mb-0"> 
+            <span class="material-symbols-outlined  fw-light me-2">
+            call
+            </span>
+          <span class="hotline mb-0"> Hotline 24/7:</span>
+         </span>
+          <span class="fw-bold d-flex mb-4 number">+91 888 104 2340</span>
+        </div>
+        <div class="col5__email border-bottom mb-3">
+          <span class="email mb-0"><span class="material-symbols-outlined pe-1 fw-light me-2">
+            mail
+            </span> <span class="hotline mb-0">
+              
+              Email Address
+            </span>
+          </span>
+          <span class="fw-bold d-flex mb-4 position-relative email-2">fastkart@hotmail.com</span>
+        </div>
+        <div class="col5__download">
+          <span class="download">Download App:</span>
+          <figure class="app-icons">
+            <img src="../imgs/playstore.png" alt="" srcset="" />
+            <img src="../imgs/appstore.png" alt="" srcset="" />
+          </figure>
+        </div>
+      </div>
+      <section class="footer__cc col-12 d-flex justify-content-between align-items-center ">
+        <div class="col-3 copy__right">
+          <span class="footer__copyright">&copy; 2022 Fastkart All rights reserved</span>
+        </div>
+        <figure class="col-3  payment-icons">
+          <img src="../imgs/payment.png" alt="" srcset="" />
+        </figure>
+        <div class="social-media col-2 d-flex">
+          <span style="font-size: 15px;" class="me-3">Stay connected:</span>
+          <ul class="list-unstyled gap-2 social">
+            <li>
+              <a href="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    </footer>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/a538994658.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <!-- <script src="../script/script.js" type="module"></script> -->
+    <script src="../script/style.js"></script>
+    <!-- <script src="../script/wishlist.js" type="module"></script> -->
+    <script src="../script/cart.js" type="module"></script>
+  </body>
+</html>
