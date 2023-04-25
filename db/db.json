@@ -525,28 +525,16 @@
   ],
   "favoritos": [
     {
-      "barcode": 1,
-      "category": "Biscuits&Snacks",
-      "name": "Fantasy Crunchy Choco Chip Cookies",
-      "img": "./imgs/cookie.png",
-      "weight": "100g",
-      "price": "26.69",
-      "discount": "28.56",
-      "quantity": 20,
-      "cantidad": 0,
-      "id": 2
-    },
-    {
-      "barcode": 4,
+      "id": 5,
+      "barcode": 5,
       "category": "Vegetables&Fruit",
-      "name": "Broccoli",
-      "img": "./imgs/broccoli.png",
-      "weight": "1Lb",
-      "price": "12.96",
-      "discount": "15.23",
+      "name": "StrawBerry",
+      "img": "./imgs/starwberry.png",
+      "weight": "2Lb",
+      "price": "17.96",
+      "discount": "18.23",
       "quantity": 1000,
-      "cantidad": 1,
-      "id": 5
+      "cantidad": 0
     }
   ],
   "carrito": [],
@@ -697,6 +685,278 @@
           "price": "12.96",
           "discount": "15.23",
           "quantity": 1000,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438225201,
+      "name": "Juan",
+      "address": "Calle 99",
+      "phone": "0000000000",
+      "products": [
+        {
+          "id": 28,
+          "barcode": 29,
+          "category": "Biscuits&Snacks",
+          "name": "Lays Sour Cream ",
+          "img": "./imgs/sour.png",
+          "weight": "80g",
+          "price": "4.96",
+          "discount": "",
+          "quantity": 23,
+          "cantidad": 5
+        },
+        {
+          "id": 30,
+          "barcode": 30,
+          "category": "Biscuits&Snacks",
+          "name": "Pringles Sour Cream ",
+          "img": "./imgs/pringles.png",
+          "weight": "80g",
+          "price": "5.96",
+          "discount": "",
+          "quantity": 23,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438441780,
+      "name": "Juan",
+      "address": "Calle 23",
+      "phone": "123",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438473728,
+      "name": "AAA",
+      "address": "aaaa",
+      "phone": "1231232",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438518391,
+      "name": "AAA",
+      "address": "AAA",
+      "phone": "AAAA",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438557917,
+      "name": "ASD",
+      "address": "ASD",
+      "phone": "ASD",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438571987,
+      "name": "asd",
+      "address": "asd",
+      "phone": "asd",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438579603,
+      "name": "asd",
+      "address": "asd",
+      "phone": "asd",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438775733,
+      "name": "AA",
+      "address": "AA",
+      "phone": "AAAA",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438810297,
+      "name": "BBB",
+      "address": "BB",
+      "phone": "BBBB",
+      "products": [
+        {
+          "id": 1,
+          "barcode": 1,
+          "category": "Biscuits&Snacks",
+          "name": "Galletitas",
+          "img": "./imgs/cookie.png",
+          "weight": "100g",
+          "price": 32,
+          "discount": "28.56",
+          "quantity": "10",
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438935761,
+      "name": "zzz",
+      "address": "zz",
+      "phone": "zzz",
+      "products": [
+        {
+          "id": 2,
+          "barcode": 2,
+          "category": "Vegetables&Fruit",
+          "name": "Danvers Carrots",
+          "img": "./imgs/carrot.png",
+          "weight": "250g",
+          "price": "6.99",
+          "discount": "",
+          "quantity": 20,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682438957867,
+      "name": "BBB",
+      "address": "BB",
+      "phone": "BBB",
+      "products": [
+        {
+          "id": 2,
+          "barcode": 2,
+          "category": "Vegetables&Fruit",
+          "name": "Danvers Carrots",
+          "img": "./imgs/carrot.png",
+          "weight": "250g",
+          "price": "6.99",
+          "discount": "",
+          "quantity": 20,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682439015517,
+      "name": "ZZZ",
+      "address": "ZZZ",
+      "phone": "ZZ",
+      "products": [
+        {
+          "id": 2,
+          "barcode": 2,
+          "category": "Vegetables&Fruit",
+          "name": "Danvers Carrots",
+          "img": "./imgs/carrot.png",
+          "weight": "250g",
+          "price": "6.99",
+          "discount": "",
+          "quantity": 20,
+          "cantidad": 1
+        }
+      ]
+    },
+    {
+      "id": 1682439035957,
+      "name": "CCC",
+      "address": "CC",
+      "phone": "CC",
+      "products": [
+        {
+          "id": 2,
+          "barcode": 2,
+          "category": "Vegetables&Fruit",
+          "name": "Danvers Carrots",
+          "img": "./imgs/carrot.png",
+          "weight": "250g",
+          "price": "6.99",
+          "discount": "",
+          "quantity": 20,
           "cantidad": 1
         }
       ]
