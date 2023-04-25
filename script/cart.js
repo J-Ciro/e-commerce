@@ -208,11 +208,15 @@ document.addEventListener('click', (event)=> {
 
 })
 
+
+
+
 const btnCheckout = document.querySelector('.btn-pay');
 
 btnCheckout.addEventListener("click", (event) => {
     btnBuy(localStorageCart);
 
+ 
 })
 
 
@@ -241,9 +245,19 @@ const btnBuy = (products) => {
     phone: phone,
     products: products
    }
-
-    postShoppingCart(URL_COMPRAS, userData)
-         
+   setTimeout(() => {
+     postShoppingCart(URL_COMPRAS, userData)
+     window.location.href = '../index.html'
+    
+  }, 900);
+  
+  Swal.fire({
+    title: 'Thank You!',
+    text: 'Succesfull Purcharse',
+    icon: 'success',
+    
+  })
+  
 }
 
 
